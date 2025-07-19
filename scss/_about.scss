@@ -1,0 +1,66 @@
+.about {
+  height: 870px;
+  width: 100%;
+  margin-top: 100px;
+  background: url("../assets/about.png") no-repeat left center;
+  background-size: contain;
+  background-position: 20% center;
+  display: flex;
+  align-items: center;
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .about__wrapper {
+      display: flex;
+      width: 550px;
+      flex-direction: column;
+      .about__text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        span {
+          color: #7eb693;
+          font-size: 30px;
+        }
+        h1 {
+          font-size: 50px;
+          color: #274c5b;
+        }
+        p {
+          color: #525c60;
+        }
+      }
+      .about__option {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .about__icon {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          .icon {
+            width: 100px;
+          }
+          .text {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            p {
+              color: rgba(0, 0, 0, 0.342);
+            }
+          }
+        }
+        button {
+          margin-top: 30px;
+          @include btn($bg-py, $bg-sy);
+          width: 220px;
+          height: 70px;
+          color: rgba(255, 255, 255, 0.851);
+        }
+      }
+    }
+  }
+}

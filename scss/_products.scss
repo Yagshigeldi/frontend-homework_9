@@ -1,0 +1,95 @@
+.products {
+    margin-top: 100px;
+    .products__title {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       padding: 20px;
+       span {
+        font-size: 30px;
+        color: #7EB693
+       }
+       h2 {
+        font-size: 50px;
+        color: #274C5B;
+       } 
+    }
+    .products__cards {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto auto auto;
+        gap: 20px;
+        .product__card {
+            position: relative;
+            .icon {
+                top: 10px;
+                left: 10px;
+                position: absolute;
+                border: 1px solid black;
+                padding: 8px;
+                border-radius: 10px;
+                color: white;
+                font-weight: 100px;
+                background-color: #274C5B
+            }
+            .card {
+                border-radius: 20px;
+                overflow: hidden;
+                border: 2px solid rgba(128, 128, 128, 0.418);
+                .image {
+                    margin: 20px;
+                    height: 350px;
+                    align-items: center;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .products__title {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 20px;
+                    align-items: start;
+                    span {
+                        font-size: 20px;
+                    }
+                    .stars {
+                        border-top: 1px solid rgba(0, 0, 0, 0.594);
+                        padding-top: 15px;
+                        margin-top: 20px;
+                        display: flex;
+                        align-items: center;
+                        gap: 80px;
+                        div {
+                            del {
+                                color: rgba(0, 0, 0, 0.358);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+        width: 200px;
+        margin-top: 60px;
+        padding: 24px 45px;
+        border-radius: 15px;
+        background: #274c5b;
+        color: white;
+        font-size: 20px;
+        text-wrap: nowrap;
+        font-weight: bold;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
